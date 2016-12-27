@@ -46,7 +46,7 @@ public class StudentServiceTest {
 		cal.clear();
 		cal.set(1977, 9, 7);
 			
-		Student insStd = new Student(5, "정준형", "jjh@test.co.kr", cal.getTime(),new PhoneNumber("010-0000-0000"));
+		Student insStd = new Student(4, "정준형", "jjh@test.co.kr", cal.getTime(), new PhoneNumber("010-0000-0000"));
 		studentService.insertItem(insStd);
 		
 		Student std = studentService.selectBtNo(insStd.getStudId());

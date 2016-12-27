@@ -25,5 +25,6 @@
 	</environments>
 	<mappers>
 		<mapper resource="kr/or/dgit/bigdata/school/mappers/StudentMapper.xml" />
+		<!-- <package name="kr.or.dgit.bigdata.school.mappers"/> -->
 	</mappers>
 </configuration>

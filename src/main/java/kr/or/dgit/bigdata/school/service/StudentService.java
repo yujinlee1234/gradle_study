@@ -55,7 +55,7 @@ public class StudentService {
 	}
 	
 	public void insertItem(Student std){
-//		logger.debug("insertItem()");
+		logger.debug("insertItem()");
 		SqlSession sqlSession = MyBatisSqlSessionFactory.openSession();
 		StudentDao studentDao = sqlSession.getMapper(StudentDao.class);
 		try{
