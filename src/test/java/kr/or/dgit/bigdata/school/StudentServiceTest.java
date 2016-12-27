@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import kr.or.dgit.bigdata.school.dto.PhoneNumber;
 import kr.or.dgit.bigdata.school.dto.Student;
 import kr.or.dgit.bigdata.school.service.StudentService;
 
@@ -38,20 +39,21 @@ public class StudentServiceTest {
 		Assert.assertNotNull(std);		
 		System.out.println(std);		
 	}
-	/*
+	
 	@Test
 	public void testInsertItem() {
 		Calendar cal = Calendar.getInstance();
+		cal.clear();
 		cal.set(1977, 9, 7);
 			
-		Student insStd = new Student(2, "공유", "ky@test.co.kr", cal.getTime());
+		Student insStd = new Student(5, "정준형", "jjh@test.co.kr", cal.getTime(),new PhoneNumber("010-0000-0000"));
 		studentService.insertItem(insStd);
 		
 		Student std = studentService.selectBtNo(insStd.getStudId());
 		
 		Assert.assertNotNull(std);
 	}
-	*/
+	
 	/*
 	@Test
 	public void testDeleteItem(){

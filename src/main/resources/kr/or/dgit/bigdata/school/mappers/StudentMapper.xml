@@ -17,7 +17,7 @@
 	</select>
 	
 	<insert id="insertItem" parameterType="Student">
-		insert into student values (#{studId},#{name},#{email},#{dob});
+		insert into student values (#{studId},#{name},#{email},#{dob},#{phone});
 	</insert>
 	
 	<delete id="deleteItem" parameterType="int">
